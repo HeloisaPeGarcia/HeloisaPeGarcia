@@ -1,12 +1,12 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=8A2BE2&height=200&section=header&text=Heloisa%20Garcia&fontSize=70&animation=fadeIn" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=00d2ff&height=200&section=header&text=Heloisa%20Garcia&fontSize=70&animation=fadeIn" width="100%" />
 
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=500&size=22&pause=1000&color=8A2BE2&center=true&vCenter=true&width=435&lines=Desenvolvedora+de+Software;DevOps+e+Arquitetura+Cloud;Entusiasta+de+I.A.;Criadora+3D" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=500&size=22&pause=1000&color=00D2FF&center=true&vCenter=true&width=435&lines=Desenvolvedora+de+Software;DevOps+e+Arquitetura+Cloud;Entusiasta+de+I.A.;Criadora+3D" alt="Typing SVG" />
   </a>
 
   <br>
-  <img src="https://komarev.com/ghpvc/?username=HeloisaPeGarcia&label=Visualizações+do+Perfil&color=8A2BE2&style=for-the-badge" alt="Profile views" />
+  <img src="https://komarev.com/ghpvc/?username=HeloisaPeGarcia&label=Visualizações+do+Perfil&color=00d2ff&style=for-the-badge" alt="Profile views" />
 </div>
 
 <br>
@@ -39,22 +39,12 @@
 ## 📈 Meu Ecossistema e Atividade
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=HeloisaPeGarcia&theme=tokyonight&hide_border=true&stroke=8A2BE2&ring=8A2BE2&fire=8A2BE2" alt="GitHub Streak" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=HeloisaPeGarcia&theme=tokyonight&hide_border=true&stroke=00d2ff&ring=00d2ff&fire=00d2ff" alt="GitHub Streak" />
 </div>
 
 <div align="center">
   <br>
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=HeloisaPeGarcia&theme=tokyo-night&hide_border=true&area=true&color=8A2BE2" alt="Activity Graph" />
-</div>
-
-<br>
-
-## 🕹️ Tech Joke (Porque debugar cansa)
-
-<div align="center">
-  <a href="https://readme-jokes.vercel.app">
-    <img src="https://readme-jokes.vercel.app/api?theme=tokyonight&hideBorder=true" alt="Jokes Card" />
-  </a>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=HeloisaPeGarcia&theme=tokyo-night&hide_border=true&area=true&color=00d2ff" alt="Activity Graph" />
 </div>
 
 <br>
@@ -71,5 +61,5 @@
 </div>
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=8A2BE2&height=100&section=footer" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=00d2ff&height=100&section=footer" width="100%" />
 </div>

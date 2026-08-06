@@ -67,24 +67,11 @@
 
 <br>
 
-## 🏆 GitHub Trophies
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=HeloisaPeGarcia&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=4" alt="GitHub Trophies" />
-</div>
-
-<br>
-
 ## 📈 My Ecosystem & Activity
 
 <div align="center">
 
-  <img height="170em" src="https://github-readme-stats.vercel.app/api?username=HeloisaPeGarcia&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&icon_color=00d2ff&title_color=00d2ff" alt="GitHub Stats" />
-  <img height="170em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=HeloisaPeGarcia&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&title_color=00d2ff" alt="Top Languages" />
-
-  <br><br>
-
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=HeloisaPeGarcia&theme=tokyonight&hide_border=true&stroke=00d2ff&ring=00d2ff&fire=ff6e6e&currStreakLabel=00d2ff&sideLabels=00d2ff&dates=aaaaaa&card_width=500" alt="GitHub Streak" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=HeloisaPeGarcia&theme=tokyonight&stroke=00d2ff&ring=00d2ff&fire=ff6e6e&currStreakLabel=00d2ff&sideLabels=00d2ff&dates=aaaaaa&card_width=500" alt="GitHub Streak" />
 
   <br><br>
 

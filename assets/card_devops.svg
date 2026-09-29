@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 120" width="100%">
+  <defs>
+    <linearGradient id="bgDevopsMac" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="borderDevopsMac" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+  <rect x="5" y="5" width="310" height="110" rx="12" fill="url(#bgDevopsMac)" fill-opacity="0.95" stroke="url(#borderDevopsMac)" stroke-width="1.5" filter="url(#shadow)"/>
+  <circle cx="50" cy="60" r="26" fill="#0369a1" fill-opacity="0.3" stroke="#38bdf8" stroke-width="1.2"/>
+  <text x="50" y="67" text-anchor="middle" font-size="26">☁️</text>
+  <text x="92" y="44" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-weight="700" font-size="15" fill="#f8fafc">Cloud &amp; DevOps</text>
+  <text x="92" y="66" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="12.5" fill="#38bdf8">AWS • Azure • Docker</text>
+  <text x="92" y="86" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="12.5" fill="#94a3b8">Kubernetes • Terraform</text>
+</svg>

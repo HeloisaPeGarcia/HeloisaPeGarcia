@@ -1,301 +1,242 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 540" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" width="100%" height="100%">
 <defs>
 
-  <!-- ======== GRADIENTS ======== -->
-  <linearGradient id="sceneBackground" x1="0%" y1="0%" x2="100%" y2="100%">
-    <stop offset="0%" stop-color="#05060b"/>
-    <stop offset="100%" stop-color="#0a0c18"/>
+  <!-- ======== BACKGROUND ======== -->
+  <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%"  stop-color="#f4f6fb"/>
+    <stop offset="55%" stop-color="#eef1f8"/>
+    <stop offset="100%" stop-color="#e7ebf5"/>
   </linearGradient>
-
-  <radialGradient id="aurora1" cx="22%" cy="30%" r="55%">
-    <stop offset="0%"   stop-color="#1a3a6e" stop-opacity="0.55"/>
-    <stop offset="100%" stop-color="#05060b" stop-opacity="0"/>
+  <radialGradient id="blob1" cx="18%" cy="20%" r="50%">
+    <stop offset="0%"   stop-color="#93c5fd" stop-opacity="0.45"/>
+    <stop offset="100%" stop-color="#93c5fd" stop-opacity="0"/>
   </radialGradient>
-  <radialGradient id="aurora2" cx="80%" cy="70%" r="55%">
-    <stop offset="0%"   stop-color="#2a1a6e" stop-opacity="0.45"/>
-    <stop offset="100%" stop-color="#05060b" stop-opacity="0"/>
+  <radialGradient id="blob2" cx="85%" cy="75%" r="50%">
+    <stop offset="0%"   stop-color="#c4b5fd" stop-opacity="0.40"/>
+    <stop offset="100%" stop-color="#c4b5fd" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="blob3" cx="75%" cy="10%" r="40%">
+    <stop offset="0%"   stop-color="#5eead4" stop-opacity="0.28"/>
+    <stop offset="100%" stop-color="#5eead4" stop-opacity="0"/>
   </radialGradient>
 
+  <!-- ======== TITLE ======== -->
   <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-    <stop offset="0%"   stop-color="#f8fafc"/>
-    <stop offset="45%"  stop-color="#ffffff"/>
-    <stop offset="100%" stop-color="#7c8aa8"/>
+    <stop offset="0%"  stop-color="#1e293b"/>
+    <stop offset="100%" stop-color="#94a3b8"/>
   </linearGradient>
 
-  <!-- Aluminium bezel -->
-  <linearGradient id="bezelMetal" x1="0%" y1="0%" x2="0%" y2="100%">
-    <stop offset="0%"   stop-color="#4b5160"/>
-    <stop offset="10%"  stop-color="#363b48"/>
-    <stop offset="90%"  stop-color="#23262f"/>
-    <stop offset="100%" stop-color="#15171e"/>
+  <!-- ======== MACBOOK — WHITE ALUMINIUM ======== -->
+  <linearGradient id="lidMetal" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%"   stop-color="#ffffff"/>
+    <stop offset="55%"  stop-color="#f3f4f8"/>
+    <stop offset="100%" stop-color="#dfe2ea"/>
   </linearGradient>
-  <linearGradient id="bezelEdge" x1="0%" y1="0%" x2="0%" y2="100%">
-    <stop offset="0%"   stop-color="#9aa6b8" stop-opacity="0.85"/>
-    <stop offset="100%" stop-color="#2b2f3a" stop-opacity="0"/>
+  <linearGradient id="lidEdge" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%"   stop-color="#ffffff"/>
+    <stop offset="100%" stop-color="#c7cbd6" stop-opacity="0"/>
   </linearGradient>
   <linearGradient id="deckMetal" x1="0%" y1="0%" x2="0%" y2="100%">
-    <stop offset="0%"   stop-color="#4e5361"/>
-    <stop offset="35%"  stop-color="#363a46"/>
-    <stop offset="100%" stop-color="#1b1d24"/>
+    <stop offset="0%"   stop-color="#fbfbfd"/>
+    <stop offset="40%"  stop-color="#e9ebf1"/>
+    <stop offset="100%" stop-color="#cdd1dc"/>
   </linearGradient>
   <linearGradient id="deckFront" x1="0%" y1="0%" x2="0%" y2="100%">
-    <stop offset="0%"   stop-color="#2b2e38"/>
-    <stop offset="100%" stop-color="#101217"/>
+    <stop offset="0%"   stop-color="#c3c7d2"/>
+    <stop offset="100%" stop-color="#9ea3b1"/>
   </linearGradient>
   <linearGradient id="hingeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-    <stop offset="0%"   stop-color="#05060a"/>
-    <stop offset="100%" stop-color="#000000"/>
+    <stop offset="0%"   stop-color="#b9bdc8"/>
+    <stop offset="100%" stop-color="#8c91a0"/>
   </linearGradient>
 
-  <linearGradient id="glassA" x1="0%" y1="0%" x2="100%" y2="100%">
-    <stop offset="0%"   stop-color="#1b2740" stop-opacity="0.95"/>
-    <stop offset="100%" stop-color="#0e1422" stop-opacity="0.98"/>
+  <!-- ======== GLASS PANELS (glassmorphism) ======== -->
+  <linearGradient id="glass1" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%"  stop-color="#ffffff" stop-opacity="0.55"/>
+    <stop offset="100%" stop-color="#ffffff" stop-opacity="0.18"/>
   </linearGradient>
-  <linearGradient id="glassB" x1="0%" y1="0%" x2="100%" y2="100%">
-    <stop offset="0%"   stop-color="#241a3d" stop-opacity="0.95"/>
-    <stop offset="100%" stop-color="#130d22" stop-opacity="0.98"/>
+  <linearGradient id="glass2" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%"  stop-color="#dbeafe" stop-opacity="0.55"/>
+    <stop offset="100%" stop-color="#ede9fe" stop-opacity="0.25"/>
+  </linearGradient>
+  <linearGradient id="screenWash" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%"  stop-color="#eef2ff"/>
+    <stop offset="100%" stop-color="#f8fafc"/>
   </linearGradient>
 
   <filter id="softShadow" x="-30%" y="-30%" width="160%" height="200%">
-    <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000" flood-opacity="0.6"/>
+    <feDropShadow dx="0" dy="22" stdDeviation="22" flood-color="#1e293b" flood-opacity="0.18"/>
   </filter>
-  <filter id="blurSm" x="-20%" y="-20%" width="140%" height="140%">
-    <feGaussianBlur stdDeviation="4"/>
+  <filter id="cardShadow" x="-40%" y="-40%" width="180%" height="220%">
+    <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#1e293b" flood-opacity="0.12"/>
   </filter>
   <filter id="blurMd" x="-20%" y="-20%" width="140%" height="140%">
-    <feGaussianBlur stdDeviation="10"/>
-  </filter>
-  <filter id="glowSm" x="-60%" y="-60%" width="220%" height="220%">
-    <feGaussianBlur stdDeviation="3" result="b"/>
-    <feComposite in="SourceGraphic" in2="b" operator="over"/>
+    <feGaussianBlur stdDeviation="14"/>
   </filter>
 
   <clipPath id="screenClip">
-    <rect x="312" y="130" width="576" height="286" rx="4"/>
+    <rect x="320" y="158" width="560" height="266" rx="6"/>
   </clipPath>
 
 </defs>
 
 <style>
-  @keyframes auroraPulse { 0%,100%{opacity:.8;} 50%{opacity:.45;} }
+  @keyframes floatBlob { 0%,100%{ transform: translateY(0px); } 50%{ transform: translateY(-14px); } }
   @keyframes cursorBlink { 0%,49%{opacity:1;} 50%,100%{opacity:0;} }
 
-  /* Window "opening" pop — scale + fade with a slight spring overshoot */
   @keyframes winPop {
-    0%    { opacity: 0; transform: scale(.72); }
-    7%    { opacity: 1; transform: scale(1.045); }
-    13%   { opacity: 1; transform: scale(1); }
-    88%   { opacity: 1; transform: scale(1); }
-    96%   { opacity: 0; transform: scale(.9); }
-    100%  { opacity: 0; transform: scale(.72); }
+    0%    { opacity: 0; transform: scale(.85) translateY(10px); }
+    8%    { opacity: 1; transform: scale(1.02) translateY(0); }
+    15%   { opacity: 1; transform: scale(1) translateY(0); }
+    88%   { opacity: 1; transform: scale(1) translateY(0); }
+    96%   { opacity: 0; transform: scale(.94) translateY(6px); }
+    100%  { opacity: 0; transform: scale(.85) translateY(10px); }
   }
 
   .win { transform-box: fill-box; transform-origin: 50% 50%; }
-  .win-main { animation: winPop 7s ease-in-out infinite; }
-  .win-a    { animation: winPop 7s ease-in-out infinite; animation-delay: 0.6s; }
-  .win-b    { animation: winPop 7s ease-in-out infinite; animation-delay: 1.2s; }
+  .win-main { animation: winPop 8s ease-in-out infinite; }
+  .win-a    { animation: winPop 8s ease-in-out infinite; animation-delay: 0.7s; }
 
-  .aurora1 { animation: auroraPulse 10s ease-in-out infinite; }
-  .aurora2 { animation: auroraPulse 13s ease-in-out infinite; animation-delay: -4s; }
-  .cursor  { animation: cursorBlink 1s step-end infinite; }
+  .blob1 { animation: floatBlob 9s ease-in-out infinite; }
+  .blob2 { animation: floatBlob 11s ease-in-out infinite; animation-delay: -3s; }
+  .cursor { animation: cursorBlink 1s step-end infinite; }
 
   .t-name {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-    font-weight: 900; letter-spacing: -1px;
+    font-weight: 800; letter-spacing: -1px;
     fill: url(#titleGrad);
   }
-  .mono { font-family: "SF Mono","Fira Code",Menlo,Consolas,monospace; font-size: 11.5px; fill: #cdd6f4; }
-  .prompt  { fill: #89b4fa; font-weight: 700; }
-  .str     { fill: #a6e3a1; }
-  .comment { fill: #6c7086; font-style: italic; }
-  .ok      { fill: #a6e3a1; }
-  .bar-text{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 9.5px; fill: #94a3b8; }
-  .win-title{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 10px; fill: #6b7280; }
-  .card-title{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-weight: 700; font-size: 12.5px; fill: #f1f5f9; }
-  .card-sub{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 10px; fill: #8891a8; }
+  .mono { font-family: "SF Mono","Fira Code",Menlo,Consolas,monospace; font-size: 11px; fill: #334155; }
+  .prompt  { fill: #2563eb; font-weight: 700; }
+  .str     { fill: #0d9488; }
+  .comment { fill: #94a3b8; font-style: italic; }
+  .ok      { fill: #059669; }
+  .bar-text{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 9.5px; fill: #64748b; }
+  .win-title{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 9.5px; fill: #64748b; }
+  .card-title{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-weight: 700; font-size: 13px; fill: #1e293b; }
+  .card-sub{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 10px; fill: #64748b; }
 </style>
 
 <!-- ================================================ -->
 <!-- BACKGROUND                                      -->
 <!-- ================================================ -->
-<rect width="1200" height="540" fill="url(#sceneBackground)"/>
-<ellipse cx="280" cy="150" rx="420" ry="260" fill="url(#aurora1)" class="aurora1"/>
-<ellipse cx="930" cy="360" rx="420" ry="260" fill="url(#aurora2)" class="aurora2"/>
+<rect width="1200" height="560" fill="url(#bg)"/>
+<g class="blob1"><ellipse cx="190" cy="140" rx="300" ry="210" fill="url(#blob1)"/></g>
+<g class="blob2"><ellipse cx="1010" cy="410" rx="300" ry="210" fill="url(#blob2)"/></g>
+<ellipse cx="880" cy="90" rx="240" ry="160" fill="url(#blob3)"/>
 
 <!-- ================================================ -->
-<!-- BIG NAME — sits behind the laptop               -->
+<!-- BIG NAME — peeking out from behind the laptop   -->
 <!-- ================================================ -->
-<text x="600" y="140" text-anchor="middle" class="t-name" font-size="76">HELOISA GARCIA</text>
+<text x="600" y="150" text-anchor="middle" class="t-name" font-size="90">HELOISA GARCIA</text>
 
 <!-- ================================================ -->
-<!-- LAPTOP SHADOW (contact shadow under the base)   -->
+<!-- LAPTOP SOFT SHADOW                               -->
 <!-- ================================================ -->
-<ellipse cx="600" cy="494" rx="360" ry="14" fill="#000" opacity="0.55" filter="url(#blurMd)"/>
-<ellipse cx="600" cy="486" rx="430" ry="10" fill="#38bdf8" opacity="0.05" filter="url(#blurMd)"/>
+<ellipse cx="600" cy="518" rx="330" ry="18" fill="#1e293b" opacity="0.14" filter="url(#blurMd)"/>
 
 <!-- ================================================ -->
-<!-- SCREEN (front-on, symmetric)                    -->
+<!-- SCREEN — white aluminium lid                    -->
 <!-- ================================================ -->
-<rect x="296" y="104" width="608" height="338" rx="22"
-      fill="url(#bezelMetal)" stroke="url(#bezelEdge)" stroke-width="1.4"
+<rect x="306" y="134" width="588" height="326" rx="26"
+      fill="url(#lidMetal)" stroke="#d7dbe4" stroke-width="1"
       filter="url(#softShadow)"/>
-<!-- top highlight sliver -->
-<path d="M 318 106 Q 600 100 882 106 L 882 110 Q 600 105 318 110 Z" fill="#ffffff" opacity="0.10"/>
-<!-- inner screen frame -->
-<rect x="308" y="118" width="584" height="300" rx="10" fill="#07080d" stroke="#1c2130" stroke-width="1"/>
+<rect x="306.5" y="134.5" width="587" height="30" rx="26" fill="url(#lidEdge)" opacity="0.8"/>
+
+<!-- inner black screen frame (thin, modern bezel) -->
+<rect x="316" y="144" width="568" height="306" rx="14" fill="#0b0d12"/>
+<rect x="320" y="158" width="560" height="266" rx="6" fill="url(#screenWash)"/>
+
 <!-- camera notch -->
-<rect x="572" y="118" width="56" height="12" rx="6" fill="#05060a"/>
-<circle cx="600" cy="124" r="3" fill="#0a0c16" stroke="#232938" stroke-width="0.5"/>
-<circle cx="600" cy="124" r="1.4" fill="#1e3a5f"/>
+<circle cx="600" cy="150" r="2.4" fill="#1a1d24"/>
+<circle cx="600" cy="150" r="1" fill="#2c3f5c"/>
 
 <!-- ================================================ -->
-<!-- SCREEN CONTENT (clipped)                        -->
+<!-- SCREEN CONTENT                                  -->
 <!-- ================================================ -->
 <g clip-path="url(#screenClip)">
-  <g transform="translate(312,130)">
+  <g transform="translate(320,158)">
 
-    <rect x="0" y="0" width="576" height="286" fill="#0a0c16"/>
-    <ellipse cx="90" cy="40" rx="220" ry="130" fill="url(#aurora1)" opacity="0.5"/>
-    <ellipse cx="480" cy="230" rx="220" ry="140" fill="url(#aurora2)" opacity="0.4"/>
+    <rect x="0" y="0" width="560" height="266" fill="url(#screenWash)"/>
+    <ellipse cx="80" cy="40" rx="200" ry="120" fill="#bfdbfe" opacity="0.35"/>
+    <ellipse cx="470" cy="220" rx="200" ry="130" fill="#ddd6fe" opacity="0.3"/>
 
-    <!-- macOS-style menu bar -->
-    <rect x="0" y="0" width="576" height="18" fill="#0a0c16" opacity="0.92"/>
-    <rect x="0" y="17.5" width="576" height="0.5" fill="#1e293b"/>
-    <circle cx="14" cy="9" r="4.2" fill="#8692ab" opacity="0.7"/>
-    <text x="26" y="12.5" class="bar-text" font-weight="600" fill="#e2e8f0">Heloisa</text>
-    <text x="78" y="12.5" class="bar-text">Terminal</text>
-    <text x="128" y="12.5" class="bar-text">Shell</text>
-    <text x="440" y="12.5" class="bar-text">Wi-Fi</text>
-    <text x="472" y="12.5" class="bar-text">EN</text>
-    <text x="500" y="12.5" class="bar-text">11:00</text>
+    <!-- menu bar -->
+    <rect x="0" y="0" width="560" height="20" fill="#ffffff" fill-opacity="0.6"/>
+    <rect x="0" y="19.5" width="560" height="0.5" fill="#e2e8f0"/>
+    <circle cx="16" cy="10" r="4.4" fill="#94a3b8" opacity="0.6"/>
+    <text x="28" y="13.5" class="bar-text" font-weight="600" fill="#334155">Heloisa</text>
+    <text x="80" y="13.5" class="bar-text">Terminal</text>
+    <text x="440" y="13.5" class="bar-text">Wi-Fi</text>
+    <text x="474" y="13.5" class="bar-text">EN</text>
+    <text x="502" y="13.5" class="bar-text">11:00</text>
 
-    <!-- ===================== Window A: Cloud & DevOps (opens first, back-right) ===================== -->
-    <g transform="translate(354,24)">
+    <!-- ===================== Glass window A: Stack (opens first, back) ===================== -->
+    <g transform="translate(340,56)">
     <g class="win win-a">
-      <rect x="2" y="5" width="206" height="92" rx="11" fill="#000" opacity="0.4" filter="url(#blurSm)"/>
-      <rect x="0" y="0" width="206" height="92" rx="11" fill="url(#glassA)" stroke="#27456e" stroke-width="1"/>
-      <rect x="0" y="0" width="206" height="20" rx="11" fill="#101a2c"/>
-      <rect x="0" y="12" width="206" height="8" fill="#101a2c"/>
-      <circle cx="12" cy="10" r="3.4" fill="#ff5f57"/>
-      <circle cx="23" cy="10" r="3.4" fill="#febc2e"/>
-      <circle cx="34" cy="10" r="3.4" fill="#28c840"/>
-      <text x="103" y="13.5" text-anchor="middle" class="win-title">devops.sh</text>
-      <text x="16" y="42" font-size="16">☁️</text>
-      <text x="40" y="39" class="card-title">Cloud &amp; DevOps</text>
-      <text x="16" y="60" class="card-sub">AWS · Azure · Kubernetes</text>
-      <text x="16" y="74" class="card-sub">Terraform · Docker · GitOps</text>
+      <rect x="0" y="0" width="186" height="98" rx="16" fill="url(#glass2)" stroke="#ffffff" stroke-width="1" filter="url(#cardShadow)"/>
+      <rect x="0" y="0" width="186" height="98" rx="16" fill="none" stroke="#c7d2fe" stroke-width="1" opacity="0.6"/>
+      <circle cx="26" cy="30" r="15" fill="#ffffff" fill-opacity="0.7"/>
+      <text x="26" y="35" text-anchor="middle" font-size="15">☁️</text>
+      <text x="50" y="27" class="card-title">Cloud &amp; DevOps</text>
+      <text x="22" y="58" class="card-sub">AWS · Azure · Kubernetes</text>
+      <text x="22" y="74" class="card-sub">Terraform · Docker · GitOps</text>
+      <rect x="22" y="82" width="46" height="4" rx="2" fill="#60a5fa" opacity="0.5"/>
+      <rect x="72" y="82" width="34" height="4" rx="2" fill="#a78bfa" opacity="0.5"/>
     </g>
     </g>
 
-    <!-- ===================== Window B: AI & Software (opens second, back-right lower) ===================== -->
-    <g transform="translate(366,150)">
-    <g class="win win-b">
-      <rect x="2" y="5" width="196" height="88" rx="11" fill="#000" opacity="0.4" filter="url(#blurSm)"/>
-      <rect x="0" y="0" width="196" height="88" rx="11" fill="url(#glassB)" stroke="#432a74" stroke-width="1"/>
-      <rect x="0" y="0" width="196" height="20" rx="11" fill="#1a1230"/>
-      <rect x="0" y="12" width="196" height="8" fill="#1a1230"/>
-      <circle cx="12" cy="10" r="3.4" fill="#ff5f57"/>
-      <circle cx="23" cy="10" r="3.4" fill="#febc2e"/>
-      <circle cx="34" cy="10" r="3.4" fill="#28c840"/>
-      <text x="98" y="13.5" text-anchor="middle" class="win-title">ai_lab.py</text>
-      <text x="16" y="40" font-size="16">🤖</text>
-      <text x="40" y="37" class="card-title">AI &amp; Software</text>
-      <text x="16" y="57" class="card-sub">Python · PyTorch</text>
-      <text x="16" y="71" class="card-sub">MLOps · LLM Agents</text>
-    </g>
-    </g>
-
-    <!-- ===================== Terminal window (opens last, in front, centered-left) ===================== -->
-    <g transform="translate(16,34)">
+    <!-- ===================== Terminal window (opens second, front, centered) ===================== -->
+    <g transform="translate(26,34)">
     <g class="win win-main">
-      <rect x="3" y="6" width="330" height="206" rx="10" fill="#000" opacity="0.5" filter="url(#blurSm)"/>
-      <rect x="0" y="0" width="330" height="206" rx="10" fill="#0d1017" fill-opacity="0.98" stroke="#1e2a3a" stroke-width="1"/>
-      <rect x="0" y="0" width="330" height="22" rx="10" fill="#131924"/>
-      <rect x="0" y="14" width="330" height="8" fill="#131924"/>
-      <circle cx="13" cy="11" r="4" fill="#ff5f57"/>
-      <circle cx="26" cy="11" r="4" fill="#febc2e"/>
-      <circle cx="39" cy="11" r="4" fill="#28c840"/>
-      <text x="165" y="15" text-anchor="middle" class="win-title">zsh — heloisa@macbook</text>
+      <rect x="0" y="0" width="326" height="196" rx="16" fill="url(#glass1)" stroke="#ffffff" stroke-width="1.4" filter="url(#cardShadow)"/>
+      <rect x="0" y="0" width="326" height="196" rx="16" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+      <rect x="0" y="0" width="326" height="26" rx="16" fill="#ffffff" fill-opacity="0.55"/>
+      <rect x="0" y="16" width="326" height="10" fill="#ffffff" fill-opacity="0.45"/>
+      <circle cx="16" cy="13" r="4.4" fill="#ff5f57"/>
+      <circle cx="30" cy="13" r="4.4" fill="#febc2e"/>
+      <circle cx="44" cy="13" r="4.4" fill="#28c840"/>
+      <text x="163" y="17" text-anchor="middle" class="win-title">zsh — heloisa@macbook</text>
 
-      <g transform="translate(14,38)" class="mono">
-        <text x="0" y="0"><tspan class="prompt">➜</tspan><tspan fill="#a6e3a1" dx="4">~</tspan><tspan fill="#89b4fa" dx="4">git:(</tspan><tspan fill="#f38ba8">main</tspan><tspan fill="#89b4fa">)</tspan></text>
-        <text x="0" y="18"><tspan class="prompt">$</tspan><tspan dx="6">whoami</tspan><tspan class="str" dx="4">--role</tspan></text>
-        <text x="0" y="38" fill="#cdd6f4">Heloisa Pe Garcia</text>
-        <text x="0" y="54" fill="#cdd6f4">Software Developer · DevOps &amp; Cloud</text>
-        <line x1="0" y1="64" x2="300" y2="64" stroke="#1e293b" stroke-width="0.7"/>
-        <text x="0" y="82"><tspan class="prompt">$</tspan><tspan dx="6">kubectl apply</tspan><tspan class="str" dx="4">-f deploy.yaml</tspan></text>
-        <text x="0" y="100" class="ok">✔ 3/3 replicas ready ⚡</text>
-        <text x="0" y="118"><tspan class="prompt">$</tspan><tspan dx="6">open</tspan><tspan class="str" dx="4">--new-ideas</tspan></text>
-        <text x="0" y="136" class="comment"># loading next project...</text>
-        <rect x="0" y="144" width="7" height="12" fill="#89b4fa" class="cursor"/>
+      <g transform="translate(18,48)" class="mono">
+        <text x="0" y="0"><tspan class="prompt">➜</tspan><tspan fill="#0d9488" dx="4">~</tspan><tspan fill="#2563eb" dx="4">git:(</tspan><tspan fill="#db2777">main</tspan><tspan fill="#2563eb">)</tspan></text>
+        <text x="0" y="20"><tspan class="prompt">$</tspan><tspan dx="6" fill="#334155">whoami</tspan><tspan class="str" dx="4">--role</tspan></text>
+        <text x="0" y="42" fill="#1e293b" font-weight="600">Heloisa Pe Garcia</text>
+        <text x="0" y="60" fill="#475569">Software Developer · DevOps &amp; Cloud</text>
+        <line x1="0" y1="72" x2="296" y2="72" stroke="#e2e8f0" stroke-width="1"/>
+        <text x="0" y="92"><tspan class="prompt">$</tspan><tspan dx="6" fill="#334155">kubectl apply</tspan><tspan class="str" dx="4">-f deploy.yaml</tspan></text>
+        <text x="0" y="112" class="ok">✔ 3/3 replicas ready ⚡</text>
+        <text x="0" y="132"><tspan class="prompt">$</tspan><tspan dx="6" fill="#334155">open</tspan><tspan class="str" dx="4">--new-ideas</tspan></text>
+        <text x="0" y="150" class="comment"># loading next project...</text>
+        <rect x="0" y="158" width="7" height="13" fill="#2563eb" class="cursor"/>
       </g>
     </g>
     </g>
-
-    <!-- Dock -->
-    <rect x="178" y="260" width="220" height="18" rx="9" fill="#11131c" opacity="0.85" stroke="#232938" stroke-width="0.6"/>
-    <g>
-      <rect x="188" y="265" width="10" height="10" rx="3" fill="#60a5fa"/>
-      <rect x="203" y="265" width="10" height="10" rx="3" fill="#c4b5fd"/>
-      <rect x="218" y="265" width="10" height="10" rx="3" fill="#6ee7b7"/>
-      <rect x="233" y="265" width="10" height="10" rx="3" fill="#fca5a5"/>
-      <rect x="248" y="265" width="10" height="10" rx="3" fill="#fcd34d"/>
-      <rect x="263" y="265" width="10" height="10" rx="3" fill="#93c5fd"/>
-      <rect x="283" y="265" width="1" height="10" fill="#334155"/>
-      <rect x="293" y="265" width="10" height="10" rx="3" fill="#a5b4fc"/>
-      <rect x="308" y="265" width="10" height="10" rx="3" fill="#5eead4"/>
-      <rect x="323" y="265" width="10" height="10" rx="3" fill="#f0abfc"/>
-      <rect x="338" y="265" width="10" height="10" rx="3" fill="#fda4af"/>
-      <rect x="353" y="265" width="10" height="10" rx="3" fill="#86efac"/>
-    </g>
   </g>
 </g>
 
-<!-- Screen glare -->
-<g clip-path="url(#screenClip)" opacity="0.03">
-  <path d="M 312 130 L 560 130 L 312 300 Z" fill="#ffffff"/>
+<!-- subtle glare on screen -->
+<g clip-path="url(#screenClip)" opacity="0.08">
+  <path d="M 320 158 L 520 158 L 320 300 Z" fill="#ffffff"/>
 </g>
 
 <!-- ================================================ -->
-<!-- HINGE                                            -->
+<!-- HINGE                                             -->
 <!-- ================================================ -->
-<rect x="330" y="440" width="540" height="10" rx="3" fill="url(#hingeGrad)"/>
-<rect x="330" y="440" width="540" height="2" fill="#4a4f5e" opacity="0.4"/>
+<rect x="340" y="454" width="520" height="10" rx="4" fill="url(#hingeGrad)"/>
+<rect x="340" y="454" width="520" height="2" fill="#ffffff" opacity="0.5"/>
 
 <!-- ================================================ -->
-<!-- KEYBOARD DECK (trapezoid — flares toward viewer) -->
+<!-- KEYBOARD DECK — white aluminium, trapezoid       -->
 <!-- ================================================ -->
-<path d="M 334 450 L 866 450 L 946 494 L 254 494 Z" fill="url(#deckMetal)" stroke="#0c0d12" stroke-width="1"/>
-<!-- top edge highlight -->
-<path d="M 334 450 L 866 450 L 862 454 L 338 454 Z" fill="#9aa6b8" opacity="0.3"/>
-<!-- front face (thickness) -->
-<path d="M 254 494 L 946 494 L 946 500 Q 600 506 254 500 Z" fill="url(#deckFront)"/>
-<path d="M 254 494 L 946 494" stroke="#000" stroke-width="1" opacity="0.4"/>
+<path d="M 344 464 L 856 464 L 924 500 L 276 500 Z" fill="url(#deckMetal)" stroke="#cdd1dc" stroke-width="1"/>
+<path d="M 344 464 L 856 464 L 852 468 L 348 468 Z" fill="#ffffff" opacity="0.6"/>
+<path d="M 276 500 L 924 500 L 924 505 Q 600 510 276 505 Z" fill="url(#deckFront)"/>
 
-<!-- keyboard well + abstracted keys, clipped to deck trapezoid -->
-<clipPath id="deckClip">
-  <path d="M 334 450 L 866 450 L 946 494 L 254 494 Z"/>
-</clipPath>
-<g clip-path="url(#deckClip)" opacity="0.9">
-  <rect x="300" y="452" width="600" height="46" rx="4" fill="#15171e"/>
-  <g fill="#2e3240" stroke="#05060a" stroke-width="0.4">
-    <!-- row 1 -->
-    <g transform="translate(300,456)">
-      <rect x="0" y="0" width="34" height="7" rx="1.5"/><rect x="37" y="0" width="34" height="7" rx="1.5"/><rect x="74" y="0" width="34" height="7" rx="1.5"/><rect x="111" y="0" width="34" height="7" rx="1.5"/><rect x="148" y="0" width="34" height="7" rx="1.5"/><rect x="185" y="0" width="34" height="7" rx="1.5"/><rect x="222" y="0" width="34" height="7" rx="1.5"/><rect x="259" y="0" width="34" height="7" rx="1.5"/><rect x="296" y="0" width="34" height="7" rx="1.5"/><rect x="333" y="0" width="34" height="7" rx="1.5"/><rect x="370" y="0" width="34" height="7" rx="1.5"/><rect x="407" y="0" width="34" height="7" rx="1.5"/><rect x="444" y="0" width="34" height="7" rx="1.5"/><rect x="481" y="0" width="34" height="7" rx="1.5"/><rect x="518" y="0" width="34" height="7" rx="1.5"/><rect x="555" y="0" width="34" height="7" rx="1.5"/>
-    </g>
-    <!-- row 2 -->
-    <g transform="translate(302,467)">
-      <rect x="0" y="0" width="34" height="7" rx="1.5"/><rect x="37" y="0" width="34" height="7" rx="1.5"/><rect x="74" y="0" width="34" height="7" rx="1.5"/><rect x="111" y="0" width="34" height="7" rx="1.5"/><rect x="148" y="0" width="34" height="7" rx="1.5"/><rect x="185" y="0" width="34" height="7" rx="1.5"/><rect x="222" y="0" width="34" height="7" rx="1.5"/><rect x="259" y="0" width="34" height="7" rx="1.5"/><rect x="296" y="0" width="34" height="7" rx="1.5"/><rect x="333" y="0" width="34" height="7" rx="1.5"/><rect x="370" y="0" width="34" height="7" rx="1.5"/><rect x="407" y="0" width="34" height="7" rx="1.5"/><rect x="444" y="0" width="34" height="7" rx="1.5"/><rect x="481" y="0" width="34" height="7" rx="1.5" fill="#38bdf8" fill-opacity="0.3"/><rect x="518" y="0" width="34" height="7" rx="1.5"/>
-    </g>
-    <!-- row 3 -->
-    <g transform="translate(305,478)">
-      <rect x="0" y="0" width="34" height="7" rx="1.5"/><rect x="37" y="0" width="34" height="7" rx="1.5"/><rect x="74" y="0" width="34" height="7" rx="1.5"/><rect x="111" y="0" width="34" height="7" rx="1.5"/><rect x="148" y="0" width="34" height="7" rx="1.5"/><rect x="185" y="0" width="34" height="7" rx="1.5"/><rect x="222" y="0" width="34" height="7" rx="1.5"/><rect x="259" y="0" width="34" height="7" rx="1.5"/><rect x="296" y="0" width="34" height="7" rx="1.5"/><rect x="333" y="0" width="34" height="7" rx="1.5"/><rect x="370" y="0" width="34" height="7" rx="1.5"/><rect x="407" y="0" width="34" height="7" rx="1.5"/><rect x="444" y="0" width="34" height="7" rx="1.5"/><rect x="481" y="0" width="34" height="7" rx="1.5"/>
-    </g>
-  </g>
-</g>
+<!-- minimal keyboard suggestion — just a soft rounded well, no literal keys (clean look) -->
+<path d="M 362 470 L 838 470 L 892 492 L 308 492 Z" fill="#dde1ea" opacity="0.55"/>
 
 <!-- trackpad -->
-<path d="M 540 497 L 660 497 L 672 519 L 528 519 Z" fill="#0f1016" stroke="#2a2d36" stroke-width="1" opacity="0.9"/>
-<path d="M 540 497 L 660 497 L 658 499 L 542 499 Z" fill="#4a4f5e" opacity="0.3"/>
+<path d="M 548 496 L 652 496 L 660 512 L 540 512 Z" fill="#ffffff" fill-opacity="0.5" stroke="#cdd1dc" stroke-width="1"/>
 
 </svg>

@@ -1,24 +1,28 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" width="100%" height="100%">
 <defs>
 
+  <!-- ======== SIGNATURE PALETTE: Ink Petrol + Coral ======== -->
+  <!-- petrol-900 #0b2b36 · petrol-700 #124a5c · petrol-500 #1b7389 · petrol-300 #7fb8c9 -->
+  <!-- coral-500  #ff7a59 · coral-300  #ffb49c · amber-400  #ffc24b                     -->
+
   <!-- ======== BACKGROUND ACCENTS (translucent, no base fill) ======== -->
   <radialGradient id="blob1" cx="18%" cy="20%" r="50%">
-    <stop offset="0%"   stop-color="#93c5fd" stop-opacity="0.45"/>
-    <stop offset="100%" stop-color="#93c5fd" stop-opacity="0"/>
+    <stop offset="0%"   stop-color="#7fb8c9" stop-opacity="0.40"/>
+    <stop offset="100%" stop-color="#7fb8c9" stop-opacity="0"/>
   </radialGradient>
   <radialGradient id="blob2" cx="85%" cy="75%" r="50%">
-    <stop offset="0%"   stop-color="#c4b5fd" stop-opacity="0.40"/>
-    <stop offset="100%" stop-color="#c4b5fd" stop-opacity="0"/>
+    <stop offset="0%"   stop-color="#ffb49c" stop-opacity="0.38"/>
+    <stop offset="100%" stop-color="#ffb49c" stop-opacity="0"/>
   </radialGradient>
   <radialGradient id="blob3" cx="75%" cy="10%" r="40%">
-    <stop offset="0%"   stop-color="#5eead4" stop-opacity="0.28"/>
-    <stop offset="100%" stop-color="#5eead4" stop-opacity="0"/>
+    <stop offset="0%"   stop-color="#ffc24b" stop-opacity="0.22"/>
+    <stop offset="100%" stop-color="#ffc24b" stop-opacity="0"/>
   </radialGradient>
 
   <!-- ======== TITLE ======== -->
   <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-    <stop offset="0%"  stop-color="#1e293b"/>
-    <stop offset="100%" stop-color="#94a3b8"/>
+    <stop offset="0%"  stop-color="#0b2b36"/>
+    <stop offset="100%" stop-color="#5a8a97"/>
   </linearGradient>
 
   <!-- ======== MACBOOK — WHITE ALUMINIUM ======== -->
@@ -52,7 +56,7 @@
   </linearGradient>
   <linearGradient id="glass2" x1="0%" y1="0%" x2="100%" y2="100%">
     <stop offset="0%"  stop-color="#dbeafe" stop-opacity="0.55"/>
-    <stop offset="100%" stop-color="#ede9fe" stop-opacity="0.25"/>
+    <stop offset="100%" stop-color="#ffe4d9" stop-opacity="0.3"/>
   </linearGradient>
   <linearGradient id="screenWash" x1="0%" y1="0%" x2="100%" y2="100%">
     <stop offset="0%"  stop-color="#eef2ff"/>
@@ -102,8 +106,8 @@
     fill: url(#titleGrad);
   }
   .mono { font-family: "SF Mono","Fira Code",Menlo,Consolas,monospace; font-size: 11px; fill: #334155; }
-  .prompt  { fill: #2563eb; font-weight: 700; }
-  .str     { fill: #0d9488; }
+  .prompt  { fill: #124a5c; font-weight: 700; }
+  .str     { fill: #1b7389; }
   .comment { fill: #94a3b8; font-style: italic; }
   .ok      { fill: #059669; }
   .bar-text{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 9.5px; fill: #64748b; }
@@ -111,6 +115,15 @@
   .card-title{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-weight: 700; font-size: 13px; fill: #1e293b; }
   .card-sub{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 10px; fill: #64748b; }
 </style>
+
+<!-- ================================================ -->
+<!-- MASCOT WATERMARK — abstract "H" monogram        -->
+<!-- ================================================ -->
+<g transform="translate(600,300) rotate(-8) scale(2.6)" opacity="0.055">
+  <rect x="-70" y="-90" width="26" height="180" rx="8" fill="#0b2b36"/>
+  <rect x="44" y="-90" width="26" height="180" rx="8" fill="#0b2b36"/>
+  <path d="M -70 -8 L 70 -28 L 70 12 L -70 32 Z" fill="#ff7a59"/>
+</g>
 
 <!-- ================================================ -->
 <!-- BACKGROUND                                      -->
@@ -175,8 +188,8 @@
       <text x="50" y="27" class="card-title">Cloud &amp; DevOps</text>
       <text x="22" y="58" class="card-sub">AWS · Azure · Kubernetes</text>
       <text x="22" y="74" class="card-sub">Terraform · Docker · GitOps</text>
-      <rect x="22" y="82" width="46" height="4" rx="2" fill="#60a5fa" opacity="0.5"/>
-      <rect x="72" y="82" width="34" height="4" rx="2" fill="#a78bfa" opacity="0.5"/>
+      <rect x="22" y="82" width="46" height="4" rx="2" fill="#1b7389" opacity="0.5"/>
+      <rect x="72" y="82" width="34" height="4" rx="2" fill="#ff7a59" opacity="0.5"/>
     </g>
     </g>
 
@@ -193,7 +206,7 @@
       <text x="163" y="17" text-anchor="middle" class="win-title">zsh — heloisa@macbook</text>
 
       <g transform="translate(18,48)" class="mono">
-        <text x="0" y="0"><tspan class="prompt">➜</tspan><tspan fill="#0d9488" dx="4">~</tspan><tspan fill="#2563eb" dx="4">git:(</tspan><tspan fill="#db2777">main</tspan><tspan fill="#2563eb">)</tspan></text>
+        <text x="0" y="0"><tspan class="prompt">➜</tspan><tspan fill="#1b7389" dx="4">~</tspan><tspan fill="#124a5c" dx="4">git:(</tspan><tspan fill="#ff7a59">main</tspan><tspan fill="#124a5c">)</tspan></text>
         <text x="0" y="20"><tspan class="prompt">$</tspan><tspan dx="6" fill="#334155">whoami</tspan><tspan class="str" dx="4">--role</tspan></text>
         <text x="0" y="42" fill="#1e293b" font-weight="600">Heloisa Pe Garcia</text>
         <text x="0" y="60" fill="#475569">Software Developer · DevOps &amp; Cloud</text>
@@ -202,7 +215,7 @@
         <text x="0" y="112" class="ok">✔ 3/3 replicas ready ⚡</text>
         <text x="0" y="132"><tspan class="prompt">$</tspan><tspan dx="6" fill="#334155">open</tspan><tspan class="str" dx="4">--new-ideas</tspan></text>
         <text x="0" y="150" class="comment"># loading next project...</text>
-        <rect x="0" y="158" width="7" height="13" fill="#2563eb" class="cursor"/>
+        <rect x="0" y="158" width="7" height="13" fill="#ff7a59" class="cursor"/>
       </g>
     </g>
     </g>

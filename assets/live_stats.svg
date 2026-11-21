@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1220 110" width="100%" height="100%">
+  <style>
+    .tile { animation: fadeIn 0.8s ease both; }
+  </style>
+
+    <g transform="translate(20,10)">
+      <rect width="280" height="90" rx="16" fill="rgba(255,255,255,0.55)" stroke="#e2e8f0" stroke-width="1"/>
+      <rect x="0" y="0" width="5" height="90" rx="2.5" fill="#1b7389"/>
+      <text x="26" y="36" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif"
+            font-size="26" font-weight="800" fill="#0b2b36">—</text>
+      <text x="26" y="58" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif"
+            font-size="12" fill="#64748b">Public Repos</text>
+    </g>
+    <g transform="translate(320,10)">
+      <rect width="280" height="90" rx="16" fill="rgba(255,255,255,0.55)" stroke="#e2e8f0" stroke-width="1"/>
+      <rect x="0" y="0" width="5" height="90" rx="2.5" fill="#ffc24b"/>
+      <text x="26" y="36" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif"
+            font-size="26" font-weight="800" fill="#0b2b36">—</text>
+      <text x="26" y="58" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif"
+            font-size="12" fill="#64748b">Followers</text>
+    </g>
+    <g transform="translate(620,10)">
+      <rect width="280" height="90" rx="16" fill="rgba(255,255,255,0.55)" stroke="#e2e8f0" stroke-width="1"/>
+      <rect x="0" y="0" width="5" height="90" rx="2.5" fill="#ff7a59"/>
+      <text x="26" y="36" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif"
+            font-size="26" font-weight="800" fill="#0b2b36">—</text>
+      <text x="26" y="58" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif"
+            font-size="12" fill="#64748b">Total Stars</text>
+    </g>
+    <g transform="translate(920,10)">
+      <rect width="280" height="90" rx="16" fill="rgba(255,255,255,0.55)" stroke="#e2e8f0" stroke-width="1"/>
+      <rect x="0" y="0" width="5" height="90" rx="2.5" fill="#124a5c"/>
+      <text x="26" y="36" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif"
+            font-size="26" font-weight="800" fill="#0b2b36">—</text>
+      <text x="26" y="58" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif"
+            font-size="12" fill="#64748b">On GitHub Since</text>
+    </g>
+</svg>

@@ -15,7 +15,7 @@
       <rect width="280" height="90" rx="16" fill="rgba(255,255,255,0.04)" stroke="#263241" stroke-width="1"/>
       <rect x="0" y="0" width="5" height="90" rx="2.5" fill="#ffc24b"/>
       <text x="26" y="36" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif"
-            font-size="26" font-weight="800" fill="#f1f5f9">93</text>
+            font-size="26" font-weight="800" fill="#f1f5f9">95</text>
       <text x="26" y="58" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif"
             font-size="12" fill="#94a3b8">Followers</text>
     </g>
